@@ -1,0 +1,26 @@
+body {
+    font-family:"Century Gothic", sans-serif;
+    font-size: 18px;
+    background-color: #191b1b;
+    color: white;
+}
+
+h1 {
+    font-family: Impact, sans serif;
+    font-size: 40px;
+    background-color: rgb(221, 129, 9);
+    color: #191b1b;
+    padding: 0.75ex;
+}
+
+h3 {
+    color:rgb(221, 129, 9);
+}
+
+a {
+    color: rgb(182, 150, 150);
+}
+
+#powered {
+    margin-top: 25ex;
+}
