@@ -1,78 +1,92 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Página Pessoal</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>MINHA PÁGINA</h1>
-    <p>Aqui você encontrará:</p>
-    <ul>
-        <li>
-            <a href="#sobre">Sobre mim</a>
-        </li>
-        <li>
-            <a href="#aula1">O que aprendi na primeira aula do WebDev</a>
-        </li>
-        <li>
-            <a href="#aula2">O que aprendi na segunda aula do WebDev</a>
-        </li>
-        <li>
-            <a href="#extras">Extras</a>
-        </li>
-    </ul>
-    <h3 id="sobre">Sobre mim</h3>
-    <p>Olá! Sou Guilherme, aluno do Bacharelado em Ciência da Computação pelo
-    Instituto de Matemática e Estatística da USP, ingressante de 2021.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a 
-        posuere tortor, id faucibus tortor. Donec ultricies venenatis 
-        tortor, ac suscipit odio mattis et. Curabitur sodales eu arcu vel 
-        interdum. Etiam vel justo et turpis porttitor ultricies. Aliquam 
-        tempor tincidunt tellus, a maximus lorem sodales in. Morbi 
-        sollicitudin tortor sed sapien condimentum, eu luctus nisl dictum. 
-        Aliquam sagittis quam ut nisl semper, quis facilisis nunc 
-        efficitur. In euismod nulla ut eros efficitur, nec tincidunt dolor 
-        mollis. In hac habitasse platea dictumst. Donec non placerat risus. 
-        Nunc scelerisque convallis consectetur. Pellentesque eget risus 
-        sapien. Etiam commodo lacus quis justo tristique, nec elementum 
-        sapien imperdiet. </p>
+    <head>
+        <title>Página Pessoal</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="sections">
+                <button onclick="location.href='#sobre'" type="button">
+                    Sobre mim
+                </button>
+                <button onclick="location.href='#aula1'" type="button">
+                    Primeira aula do WebDev
+                </button>
+                <button onclick="location.href='#aula2'" type="button">
+                    Segunda aula do WebDev
+                </button>
+                <button onclick="location.href='#extras'" type="button">
+                    Extras
+                </button>
+            </div>
+        </header>
 
-    <h3 id="aula1">O que aprendi na primeira aula do WebDev</h3>
-    <ul>
-        <li>
-            Internet e Web NÃO são a mesma coisa.
-        </li>
-        <li>
-            O que exatamente é o HTML.
-        </li>
-        <li>
-            Estrutura básica do HTML (tags).
-        </li>
-    </ul>
+        <h1>MINHA PÁGINA</h1>
 
-    <h3 id="aula2">O que aprendi na segunda aula do WebDev</h3>
-    <ul>
-        <li>
-            O que é o CSS.
-        </li>
-        <li>
-            Seletores, aplicação interna e externa do CSS.
-        </li>
-        <li>
-            Box model.
-        </li>
-    </ul>
+        <h3 id="sobre">Sobre mim</h3>
+        <p>
+            Olá! Sou Guilherme, aluno do Bacharelado em Ciência da Computação pelo
+            Instituto de Matemática e Estatística da USP, ingressante de 2021.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a 
+            posuere tortor, id faucibus tortor. Donec ultricies venenatis 
+            tortor, ac suscipit odio mattis et. Curabitur sodales eu arcu vel 
+            interdum. <span>Texto destacado sem motivo aparente</span>.
+            Etiam vel justo et turpis porttitor ultricies. Aliquam 
+            tempor tincidunt tellus, a maximus lorem sodales in. Morbi 
+            sollicitudin tortor sed sapien condimentum, eu luctus nisl dictum. 
+            Aliquam sagittis quam ut nisl semper, quis facilisis nunc 
+            efficitur. In euismod nulla ut eros efficitur, nec tincidunt dolor 
+            mollis. In hac habitasse platea dictumst. Donec non placerat risus. 
+            Nunc scelerisque convallis consectetur. Pellentesque eget risus 
+            sapien. Etiam commodo lacus quis justo tristique, nec elementum 
+            sapien imperdiet. 
+        </p>
 
-    <h3 id="extras">Extras</h3>
-    <a href="https://github.com/Guilhermev25/webdev" target="_blank">
-        <img src="https://go.weave.works/rs/249-YDT-025/images/github_icon_white.png"
-        width="100" height="100">
-    </a>
-    <p id="powered">Powered by</p>
-    <a href="https://codelab.ime.usp.br/#/" target="_blank">
-        <img src="https://bcc.ime.usp.br/semana-old/2018//images/patrocinio/codelab.png"
-        width="144" height="34">
-    </a>
-    <img src="">
-  </body>
+        <h3 id="aula1">O que aprendi na primeira aula do WebDev</h3>
+        <ul>
+            <li>
+                Internet e Web NÃO são a mesma coisa.
+            </li>
+            <li>
+                O que exatamente é o HTML.
+            </li>
+            <li>
+                Estrutura básica do HTML (tags).
+            </li>
+        </ul>
+
+        <h3 id="aula2">O que aprendi na segunda aula do WebDev</h3>
+        <ul>
+            <li>
+                O que é o CSS.
+            </li>
+            <li>
+                Seletores, aplicação interna e externa do CSS.
+            </li>
+            <li>
+                Box model.
+            </li>
+        </ul>
+
+        <h3 id="extras">Extras</h3>
+        <a href="https://github.com/Guilhermev25/webdev" target="_blank">
+            <img src="https://go.weave.works/rs/249-YDT-025/images/github_icon_white.png"
+            width="100" height="100">
+        </a>
+        <p>Imagem aleatória: </p>
+        <img src="https://previews.123rf.com/images/sorapop/sorapop1802/sorapop180200072/95248242-man-and-gun-hacking-laptop-computer-isolated-on-white-background.jpg"
+            width="356" height="263">
+
+        <div id="powered">
+            <p>Powered by &nbsp</p>
+            <a href="https://codelab.ime.usp.br/#/" target="_blank">
+            <img src="https://bcc.ime.usp.br/semana-old/2018//images/patrocinio/codelab.png"
+             width="72" height="17">
+            </a>
+            
+        </div>
+    </body>
 </html>
