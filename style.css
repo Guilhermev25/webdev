@@ -1,9 +1,24 @@
 :root {
-    --cor-principal:#fc7c25;
-    --cor-fundo: #221212;
-    --cor-texto: white;
-    --cor-destaque: rgb(250, 69, 14);
+    --cor-principal: #14db8f;
+    --cor-principal-inv: #fc7c25;
+    --cor-fundo: #ffffff;
+    --cor-texto: #000000;
+    --cor-destaque: #0efa78;
 }
+
+/*  MODO CLARO
+--cor-principal:#14db8f;
+--cor-fundo: #fff7f7;
+--cor-texto: #000000;
+--cor-destaque: #0efa78;
+*/
+
+/* MODO NOTURNO
+--cor-principal:#fc7c25;
+--cor-fundo: #221212;
+--cor-texto: #ffffff;
+--cor-destaque: #fa450e;
+*/
 
 body {
     font-family:"Century Gothic", sans-serif;
@@ -48,7 +63,7 @@ span {
     flex-direction: row;
 }
 
-#barra {
+.barra {
     margin: 0em 2em 0em 2em;
     padding: .8em;
     min-width: 15em;
@@ -58,12 +73,12 @@ span {
     background-color: var(--cor-fundo);
 }
 
-#titulo-barra {
+.barra h3 {
     color: var(--cor-principal);
     margin-left: 0.6em;
 }
 
-#itens-barra {
+.barra ul {
     margin-left: -0.6em;
     display: flex;
     flex-direction: column;
@@ -81,7 +96,7 @@ span {
     width: 10em;
 }
 
-button {
+.seções button {
     transition-duration: 0.4s;
     background-color: var(--cor-principal);
     color: var(--cor-fundo);
@@ -93,11 +108,20 @@ button {
     font-size: 1em;
 }
 
-button:hover {
+.seções button:hover {
     background-color: var(--cor-destaque);
     color: var(--cor-fundo);
     margin-left: -1em;
   }
+
+#modo {
+    background-color: var(--cor-principal-inv);
+    color: var(--cor-texto);
+    border-radius: 0.8em;
+    border: var(--cor-fundo);
+    margin: 0.2em 0.2em;
+    padding: 1em 1em;
+}
 
 #powered {
     display: flex;

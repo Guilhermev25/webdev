@@ -3,6 +3,7 @@
     <head>
         <title>Página Pessoal</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <header>
@@ -48,9 +49,9 @@
                 </p>
             </div>
 
-            <div id="barra">
-                <h3 id="titulo-barra">BARRA LATERAL SUPER ÚTIL</h3>
-                <ul id="itens-barra">
+            <div class="barra">
+                <h3>BARRA LATERAL SUPER ÚTIL</h3>
+                <ul>
                     <li> 1º item super útil </li>
                     <li> 2º item super útil </li>
                     <li> 3º item super útil </li>
@@ -92,8 +93,12 @@
         </ul>
 
         <h3 id="extras">Extras</h3>
-        <a href="https://github.com/Guilhermev25/webdev" target="_blank">
-            <img src="https://go.weave.works/rs/249-YDT-025/images/github_icon_white.png"
+        
+        <button onclick="trocar_modo()" id="modo">Modo noturno</button>
+        <br></br>
+        
+        <a href="https://github.com/Guilhermev25/webdev" target="_blank" >
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" name="github"
             width="100" height="100">
         </a>
         <p>Imagem aleatória: </p>
@@ -106,7 +111,6 @@
             <img src="https://bcc.ime.usp.br/semana-old/2018//images/patrocinio/codelab.png"
              width="72" height="17">
             </a>
-            
         </div>
     </body>
 </html>
