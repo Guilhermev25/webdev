@@ -1,24 +1,32 @@
+:root {
+    --cor-principal:#fc7c25;
+    --cor-fundo: #221212;
+    --cor-texto: white;
+    --cor-destaque: rgb(250, 69, 14);
+}
+
 body {
     font-family:"Century Gothic", sans-serif;
-    font-size: 18px;
-    background-color: #221212;
-    color: white;
+    font-size: 1.2em;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 1em;
 }
 
 h1 {
     font-family: Impact, sans serif;
-    font-size: 60px;
-    background-color: #fc7c25;
-    color: #221212;
+    font-size: 3.5em;
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
     padding: 0.3em;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-top: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
     border: none;
 }
 
 h3 {
-    color:#fc7c25;
+    color:var(--cor-principal);
     scroll-margin-top: 1em;
 }
 
@@ -26,14 +34,46 @@ a {
     color: rgb(182, 150, 150);
 }
 
-span {
-    background-color: rgb(245, 76, 24);
+p {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-.sections {
+span {
+    background-color: var(--cor-destaque)
+}
+
+#inicio {
+    display: flex;
+    flex-direction: row;
+}
+
+#barra {
+    margin: 0em 2em 0em 2em;
+    padding: .8em;
+    min-width: 15em;
+    border-style: inset;
+    border-width: 0.5em;
+    border-color: var(--cor-principal);
+    background-color: var(--cor-fundo);
+}
+
+#titulo-barra {
+    color: var(--cor-principal);
+    margin-left: 0.6em;
+}
+
+#itens-barra {
+    margin-left: -0.6em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.seções {
     position: fixed;
-    bottom: 5px;
-    right: 0px;
+    bottom: 0.29em;
+    right: 0em;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -43,19 +83,19 @@ span {
 
 button {
     transition-duration: 0.4s;
-    background-color: #fc7c25;
-    color: #221212;
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
     border-radius: 0.8em 0em 0em 0.8em;
-    border: #221212;
+    border: var(--cor-fundo);
     margin: 0.2em 0.2em;
     padding: 0.5em 0.7em;
     text-align: left;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 button:hover {
-    background-color: rgb(250, 69, 14);
-    color: #221212;
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo);
     margin-left: -1em;
   }
 
@@ -64,5 +104,26 @@ button:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 0.8em;
+}
+
+
+@media screen and (max-width:800px) {
+    #inicio {
+        flex-direction: column;
+    }
+
+    .seções {
+        font-size: 0.85em
+    }
+}
+
+@media screen and (max-width:500px) {
+    .seções {
+        width: 0em;
+    }
+
+    p {
+        margin: 1em;
+    }
 }
